@@ -68,7 +68,7 @@ if answer.lower().strip() == "yes":
   #Question one
   #print the options for multiple choice
   print("")
-  time.sleep(2)
+  time.sleep(1)
   print("A. %")  
   time.sleep(1)
   print("B. #")
@@ -81,6 +81,10 @@ if answer.lower().strip() == "yes":
   #user input to ask the question
   p1_q1 = input("Question 1: Which of these symbols is used to make a comment?: ")
 
+  #use while statement to ensure code doesnt break easily
+  while p1_q1.lower().strip() != "a" and p1_q1.lower().strip() != "b" and p1_q1.lower().strip() != "c" and p1_q1.lower().strip() != "d":
+    print("Enter a proper variable.")
+    p1_q1 = input("Question 1: Which of these symbols is used to make a comment?: ")
   #use if/elif statement to determine whether the question is correct
   if p1_q1.lower().strip() == "b" :
     #add one point if correct
