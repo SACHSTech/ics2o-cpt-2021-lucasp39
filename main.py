@@ -516,15 +516,15 @@ if answer.lower().strip() == "yes":
   print("D. Software used for organize/consume media files, such as images, video, and music")
   print("")
   #user input to ask the question
-  p2_q7 = input("Question 7: What is multimedia application software?: ")
+  p2_q7 = input("Question 7: What is multimedia  software?: ")
 
   #use while statement to ensure code doesnt break easily
   while p2_q7.lower().strip() != "a" and p2_q7.lower().strip() != "b" and p2_q7.lower().strip() != "c" and p2_q7.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p2_q7 = input("Question 7: What is multimedia application software?: ")
+    p2_q7 = input("Question 7: What is multimedia  software?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p2_q7.lower().strip() == "b" :
+  if p2_q7.lower().strip() == "d" :
     #add 1 point if correct
     part2_correct_answers += 1
     time.sleep(1)
@@ -538,24 +538,24 @@ if answer.lower().strip() == "yes":
 
   #Question eight
   #print the options for multiple choice
-  print("A. ")
+  print("A. Software dedicated to performing everyday computing tasks")
   time.sleep(1)
-  print("B. ")
+  print("B. Software that provides the platform for all the other software and hardware on the computer to operate.")
   time.sleep(1)
-  print("C. ")
+  print("C. Software used to create multimedia")
   time.sleep(1)
-  print("D. ")
+  print("D. Software used for browsing and viewing the internet")
   print("")
   #user input to ask the question
-  p2_q7 = input("Question 8: ")
+  p2_q8 = input("Question 8: What is design  software?: ")
 
   #use while statement to ensure code doesnt break easily
-  while p2_q7.lower().strip() != "a" and p2_q7.lower().strip() != "b" and p2_q7.lower().strip() != "c" and p2_q7.lower().strip() != "d":
+  while p2_q8.lower().strip() != "a" and p2_q8.lower().strip() != "b" and p2_q8.lower().strip() != "c" and p2_q8.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p2_q7 = input("Question 8: ")
+    p2_q8 = input("Question 8: What is design  software?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p2_q7.lower().strip() == "b" :
+  if p2_q8.lower().strip() == "c" :
     #add 1 point if correct
     part2_correct_answers += 1
     time.sleep(1)
@@ -570,14 +570,265 @@ if answer.lower().strip() == "yes":
   #Part 3
   print("")
   print("Welcome to part 3.")
-  time.sleep(2)
-  #create a variable to count the amount ofa correct answers
+  time.sleep(0.5)
+  
+  #create a variable to count the amount of correct answers
   part3_correct_answers = 0
 
+  #Question one
+  #print the options for multiple choice
+  print("A. Motherboard")
+  time.sleep(1)
+  print("B. Central Processing Unit (CPU)")
+  time.sleep(1)
+  print("C. Monitor")
+  time.sleep(1)
+  print("D. Graphics Card")
+  print("")
+  #user input to ask the question
+  p3_q1 = input("Question 1: What part is considered to be the brain of a computer?: ")
 
-  #Closing remarks: Scores, Leaderboards, Prizes
+  #use while statement to ensure code doesnt break easily
+  while p3_q1.lower().strip() != "a" and p3_q1.lower().strip() != "b" and p3_q1.lower().strip() != "c" and p3_q1.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p3_q1 = input("Question 1: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q1.lower().strip() == "b" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question two
+  #print the options for multiple choice
+  print("A. DPI")
+  time.sleep(1)
+  print("B. Thread count")
+  time.sleep(1)
+  print("C. RPM")
+  time.sleep(1)
+  print("D. Storage capacity")
+  print("")
+  #user input to ask the question
+  p3_q1 = input("Question 2: Which of these specifications relates to a mouse?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q2.lower().strip() != "a" and p3_q2.lower().strip() != "b" and p3_q2.lower().strip() != "c" and p3_q2.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p3_q2 = input("Question 1: Which of these specifications relates to a mouse?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q2.lower().strip() == "b" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+  
+  #Question three
+  #print the options for multiple choice
+  print("A. Dots per inch")
+  time.sleep(1)
+  print("B. Disks per interval")
+  time.sleep(1)
+  print("C. Drives per interface")
+  time.sleep(1)
+  print("D. It doesn't mean anything. ")
+  print("")
+  #user input to ask the question
+  p3_q3 = input("Question 3: What does DPI stand for?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q3.lower().strip() != "a" and p3_q3.lower().strip() != "b" and p3_q3.lower().strip() != "c" and p3_q3.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p3_q3 = input("Question 3: What does DPI mean?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q3.lower().strip() == "a" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question four
+  #print the options for multiple choice
+  print("A. Inputs info into the computer by pushing buttons and keys to input characters and functions")
+  time.sleep(1)
+  print("B. Supply power to different parts of the computer")
+  time.sleep(1)
+  print("C. Proving short term memory for the computer")
+  time.sleep(1)
+  print("D. Connecting all the components of a computer together to work on a single platform")
+  print("")
+  #user input to ask the question
+  p3_q4 = input("Question 4: What is the primary function of the motherboard?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q4.lower().strip() != "a" and p3_q4.lower().strip() != "b" and p3_q4.lower().strip() != "c" and p3_q4.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p3_q4 = input("Question 4: What is the primary function of the motherboard?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q4.lower().strip() == "b" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+ 
+  #Question five
+  #print the options for multiple choice
+  print("A. Mouse")
+  time.sleep(1)
+  print("B. Monitor")
+  time.sleep(1)
+  print("C. RAM")
+  time.sleep(1)
+  print("D. Connections/Ports")
+  print("")
+  #user input to ask the question
+  p3_q5 = input("Question 5: Which of these is not a peripheral component?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q5.lower().strip() != "a" and p3_q5.lower().strip() != "b" and p3_q5.lower().strip() != "c" and p3_q5.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p3_q5 = input("Question 5: Which of these is not a peripheral component?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q5.lower().strip() == "c" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question six
+  #print the options for multiple choice
+  print("A. Refresh rate")
+  time.sleep(1)
+  print("B. Revolutions per minute (RPM)")
+  time.sleep(1)
+  print("C. Interface")
+  time.sleep(1)
+  print("D. Storage Capacity")
+  print("")
+  #user input to ask the question
+  p3_q6 = input("Question 6: Which of these is not a specification related to the hard drive?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q6.lower().strip() != "a" and p3_q6.lower().strip() != "b" and p3_q6.lower().strip() != "c" and p3_q6.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    #re-ask the question so the user can give a proper answer and get out of the while loop
+    p3_q6 = input("Question 6: Which of these is not a specification related to the hard drive?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q6.lower().strip() == "a" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question seven
+  #print the options for multiple choice
+  print("A. Graphics Processing Unit(GPU)")
+  time.sleep(1)
+  print("B. Headphones/Speaker")
+  time.sleep(1)
+  print("C. Hard Drive")
+  time.sleep(1)
+  print("D. Power Supply")
+  print("")
+  #user input to ask the question
+  p3_q7 = input("Question 7: Which of these is not an internal component?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q7.lower().strip() != "a" and p3_q7.lower().strip() != "b" and p3_q7.lower().strip() != "c" and p3_q7.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    #re-ask the question so the user can give a proper answer and get out of the while loop
+    p3_q7 = input("Question 7: Which of these is not an internal component?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q7.lower().strip() == "b" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question eight
+  #print the options for multiple choice
+  print("A. Refresh Rate")
+  time.sleep(1)
+  print("B. Cache")
+  time.sleep(1)
+  print("C. Resolution")
+  time.sleep(1)
+  print("D. Frequency Range")
+  print("")
+  #user input to ask the question
+  p3_q8 = input("Question 8: Which is a specification is a specification related to speakers and headphones?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p3_q8.lower().strip() != "a" and p3_q8.lower().strip() != "b" and p3_q8.lower().strip() != "c" and p3_q8.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    #re-ask the question so the user can give a proper answer and get out of the while loop
+    p3_q8 = input("Question 8: Which is a specification is a specification related to speakers and headphones?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p3_q8.lower().strip() == "d" :
+    #add 1 point if correct
+    part3_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+  
+  #Closing remarks: Print scores, let the user know if they have qualified to win anything
   print("Thanks for participating in Lucas's Tech Shop's computer parts giveaway quiz. ")
-  time.sleep(2)
+  time.sleep(1.5)
   
   #show user his scores
   print("Here are your quiz results: ")
