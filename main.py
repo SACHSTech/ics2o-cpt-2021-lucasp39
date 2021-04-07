@@ -37,7 +37,7 @@ if answer.lower().strip() == "yes":
   print("Hello " + name.capitalize() + ", is a 3 part quiz to test your knowledge about hardware, software, and coding.")
   time.sleep(2)
   print("")
-  print("Part 1 will be about python, part 2 will be about software, and part 3 will be about hardware, and each part has 10 questions.")
+  print("Part 1 will be about python, part 2 will be about software/malware, and part 3 will be about hardware, and each part has 10 questions.")
   time.sleep(3)
   
   #show the user other user's scores to show them what scores they need to get in order to win something
@@ -83,7 +83,7 @@ if answer.lower().strip() == "yes":
 
   #use while statement to ensure code doesnt break easily
   while p1_q1.lower().strip() != "a" and p1_q1.lower().strip() != "b" and p1_q1.lower().strip() != "c" and p1_q1.lower().strip() != "d":
-    print("Enter a proper variable.")
+    print("Please type the letter corresponding with your answer.")
     p1_q1 = input("Question 1: Which of these symbols is used to make a comment?: ")
   #use if/elif statement to determine whether the question is correct
   if p1_q1.lower().strip() == "b" :
@@ -110,7 +110,13 @@ if answer.lower().strip() == "yes":
   print("D. Convert integers to strings")
   print("")
   #user input to ask the question
-  p1_q2 = input("Question 2: What does the * symbol do?:  ")
+  p1_q2 = input("Question 2: What does the * symbol do?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p1_q2.lower().strip() != "a" and p1_q2.lower().strip() != "b" and p1_q2.lower().strip() != "c" and p1_q2.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q2 = input("Question 2: What does the * symbol do?: ")
+    
 
   #use if/elif statement to determine whether the question is correct
   if p1_q2.lower().strip() == "a" :
@@ -139,6 +145,11 @@ if answer.lower().strip() == "yes":
   #user input to ask the question
   p1_q3 = input("Question 3: Which of these string methods removes all whitespace from an input?: ")
 
+  #use while statement to ensure code doesnt break easily
+  while p1_q3.lower().strip() != "a" and p1_q3.lower().strip() != "b" and p1_q3.lower().strip() != "c" and p1_q3.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q1 = input("Question 3: Which of these string methods removes all whitespace from an input?: ")
+
   #use if/elif statement to determine whether the question is correct
   if p1_q3.lower().strip() == "a" :
     #add 1 point if correct
@@ -165,6 +176,11 @@ if answer.lower().strip() == "yes":
   print("")
   #user input to ask the question
   p1_q4 = input("Question 4: What is a syntax error?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p1_q4.lower().strip() != "a" and p1_q4.lower().strip() != "b" and p1_q4.lower().strip() != "c" and p1_q4.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q4 = input("Question 4: What is a syntax error?: ")
 
   #use if/elif statement to determine whether the question is correct
   if p1_q4.lower().strip() == "d" :
@@ -193,6 +209,11 @@ if answer.lower().strip() == "yes":
   #user input to ask the question
   p1_q5 = input("Question 5: What is an infinite loop?: ")
 
+  #use while statement to ensure code doesnt break easily
+  while p1_q5.lower().strip() != "a" and p1_q5.lower().strip() != "b" and p1_q5.lower().strip() != "c" and p1_q5.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q5 = input("Question 5: What is an infinite loop?: ")
+
   #use if/elif statement to determine whether the question is correct
   if p1_q5.lower().strip() == "c" :
     #add 1 point if correct
@@ -210,6 +231,10 @@ if answer.lower().strip() == "yes":
   #user input to ask the question
   p1_q6 = input("Question 6: True or Fale: Booleans can only be assigned a \"True\" or \"False\" variable: ")
 
+  #use while statement to ensure code doesnt break easily
+  while p1_q6.lower().strip() != "true" and p1_q6.lower().strip() != "false":
+    print("Please input either \"True\" or \"False\".")
+    p1_q6 = input("Question 6: True or Fale: Booleans can only be assigned a \"True\" or \"False\" variable: ")
   #use if/elif statement to determine whether the question is correct
   if p1_q6.lower().strip() == "true" :
     #add 1 point if correct
@@ -226,19 +251,56 @@ if answer.lower().strip() == "yes":
   #Question seven
   #print the options for multiple choice
   time.sleep(2)
-  print("A. ")
+  print("A. 1variablename")
   time.sleep(1)
-  print("B. ")
+  print("B. variable_name")
   time.sleep(1)
-  print("C. ")
+  print("C. My_variable_name")
   time.sleep(1)
-  print("D. ")
+  print("D. variablename")
   print("")
   #user input to ask the question
-  p1_q7 = input("Question 7: ")
+  p1_q7 = input("Question 7: Which of these are not a valid variable name?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p1_q7.lower().strip() != "a" and p1_q7.lower().strip() != "b" and p1_q7.lower().strip() != "c" and p1_q7.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q7 = input("Question 7: Which of these symbols is used to make a comment?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p1_q7.lower().strip() == "c" :
+  if p1_q7.lower().strip() == "a" :
+    #add 1 point if correct
+    part1_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question eight
+  #print the options for multiple choice
+  time.sleep(2)
+  print("A. **")
+  time.sleep(1)
+  print("B. //")
+  time.sleep(1)
+  print("C. %")
+  time.sleep(1)
+  print("D. ^")
+  print("")
+  #user input to ask the question
+  p1_q8 = input("Question 8: Which of these are not a Python operator?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p1_q8.lower().strip() != "a" and p1_q8.lower().strip() != "b" and p1_q8.lower().strip() != "c" and p1_q8.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p1_q8 = input("Question 8: Which of these are not a Python operator?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p1_q8.lower().strip() == "d" :
     #add 1 point if correct
     part1_correct_answers += 1
     time.sleep(1)
@@ -253,9 +315,257 @@ if answer.lower().strip() == "yes":
   #Part 2
   print("")
   print("Welcome to part 2.")
-  time.sleep(2)
+  time.sleep(0.5)
   #create a variable to count the amount of correct answers
   part2_correct_answers = 0
+
+  #Question one
+  #print the options for multiple choice
+  print("A. iOS")
+  time.sleep(1)
+  print("B. Linux")
+  time.sleep(1)
+  print("C. Windows")
+  time.sleep(1)
+  print("D. Mac OS")
+  print("")
+  #user input to ask the question
+  p2_q1 = input("Question 1: What is the most widely used operating system in the world?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q1.lower().strip() != "a" and p2_q1.lower().strip() != "b" and p2_q1.lower().strip() != "c" and p2_q1.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q1 = input("Question 1: What is the most widely used operating system in the world?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q1.lower().strip() == "c" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question two
+  #print the options for multiple choice
+  print("A. Steve Jobs")
+  time.sleep(1)
+  print("B. Bill Gates")
+  time.sleep(1)
+  print("C. Steve \"Woz\" Wozniak")
+  time.sleep(1)
+  print("D. Both A and B")
+  print("")
+  #user input to ask the question
+  p2_q2 = input("Question 1: Who founded Apple?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q2.lower().strip() != "a" and p2_q2.lower().strip() != "b" and p2_q2.lower().strip() != "c" and p2_q2.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q2 = input("Question 1: Who founded Apple?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q2.lower().strip() == "d" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question three
+  #print the options for multiple choice
+  print("A. Apple")
+  time.sleep(1)
+  print("B. Xerox")
+  time.sleep(1)
+  print("C. Samsung")
+  time.sleep(1)
+  print("D. Microsoft")
+  print("")
+  #user input to ask the question
+  p2_q3 = input("Question 4: Which company was the first to have a graphics user interface (GUI) and mouse?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q3.lower().strip() != "a" and p2_q3.lower().strip() != "b" and p2_q3.lower().strip() != "c" and p2_q3.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q3 = input("Question 4: Which company was the first to have a graphics user interface (GUI) and mouse?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q3.lower().strip() == "b" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question four
+  #print the options for multiple choice
+  print("A. A malware that replicates itself to spread, and destroys data files on your computer")
+  time.sleep(1)
+  print("B. A malware that hides its true intentions of causing harm to your computer by pretending to be something it isn't")
+  time.sleep(1)
+  print("C. A malware that holds yours files \"hostage\", and demands a ransom in return for them")
+  time.sleep(1)
+  print("D. A monitoring spyware that tracks every key typed on the keyboard")
+  print("")
+  #user input to ask the question
+  p2_q4 = input("Question 4: What is keylogging malware?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q4.lower().strip() != "a" and p2_q4.lower().strip() != "b" and p2_q4.lower().strip() != "c" and p2_q4.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q4 = input("Question 4:: What is keylogging malware?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q4.lower().strip() == "c" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question five
+  #print the options for multiple choice
+  print("A. A malware that replicates itself to spread, and destroys data files on your computer")
+  time.sleep(1)
+  print("B. A malware that hides its true intentions of causing harm to your computer by pretending to be something it isn't")
+  time.sleep(1)
+  print("C. A malware that holds yours files \"hostage\", and demands a ransom in return for them")
+  time.sleep(1)
+  print("D. A monitoring spyware that tracks every key typed on the keyboard")
+  print("")
+  #user input to ask the question
+  p2_q5 = input("Question 5: What is trojan malware?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q5.lower().strip() != "a" and p2_q5.lower().strip() != "b" and p2_q5.lower().strip() != "c" and p2_q5.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q5 = input("Question 5: What is trojan malware?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q5.lower().strip() == "c" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question six
+  #print the options for multiple choice
+  print("A. Chrome OS")
+  time.sleep(1)
+  print("B. Call of Duty: Modern Warfare")
+  time.sleep(1)
+  print("C. Nvidia GForce Experience")
+  time.sleep(1)
+  print("D. Razer Cortex")
+  print("")
+  #user input to ask the question
+  p2_q6 = input("Question 5: Which of these is an example of application software?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q6.lower().strip() != "a" and p2_q6.lower().strip() != "b" and p2_q6.lower().strip() != "c" and p2_q6.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q6 = input("Question 5: Which of these is an example of application software?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q6.lower().strip() == "b" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question seven
+  #print the options for multiple choice
+  print("A. Software dedicated to performing everyday computing tasks")
+  time.sleep(1)
+  print("B. Software that provides the platform for all the other software and hardware on the computer to operate.")
+  time.sleep(1)
+  print("C. Software used to create multimedia")
+  time.sleep(1)
+  print("D. Software used for organize/consume media files, such as images, video, and music")
+  print("")
+  #user input to ask the question
+  p2_q7 = input("Question 7: What is multimedia application software?: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q7.lower().strip() != "a" and p2_q7.lower().strip() != "b" and p2_q7.lower().strip() != "c" and p2_q7.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q7 = input("Question 7: What is multimedia application software?: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q7.lower().strip() == "b" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
+
+  #Question eight
+  #print the options for multiple choice
+  print("A. ")
+  time.sleep(1)
+  print("B. ")
+  time.sleep(1)
+  print("C. ")
+  time.sleep(1)
+  print("D. ")
+  print("")
+  #user input to ask the question
+  p2_q7 = input("Question 8: ")
+
+  #use while statement to ensure code doesnt break easily
+  while p2_q7.lower().strip() != "a" and p2_q7.lower().strip() != "b" and p2_q7.lower().strip() != "c" and p2_q7.lower().strip() != "d":
+    print("Please type the letter corresponding with your answer.")
+    p2_q7 = input("Question 8: ")
+
+  #use if/elif statement to determine whether the question is correct
+  if p2_q7.lower().strip() == "b" :
+    #add 1 point if correct
+    part2_correct_answers += 1
+    time.sleep(1)
+    print("")
+    print("Correct.")
+    print("")
+  else:
+    print("")
+    print("Wrong.")
+    print("")
 
   #Part 3
   print("")
@@ -277,4 +587,4 @@ if answer.lower().strip() == "yes":
 elif answer.lower().strip() == "no":
   print("")
   time.sleep(2)
-  print("Have a good day. ")
+  print("Have a good day. ")  
