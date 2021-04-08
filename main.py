@@ -37,7 +37,7 @@ if answer.lower().strip() == "yes":
   print("Hello " + name.capitalize() + ", is a 3 part quiz to test your knowledge about hardware, software, and coding.")
   time.sleep(2)
   print("")
-  print("Part 1 will be about python, part 2 will be about software/malware, and part 3 will be about hardware, and each part has 10 questions.")
+  print("Part 1 will be about python, part 2 will be about software/malware, and part 3 will be about hardware, and each part has 8 questions.")
   time.sleep(3)
   
   #show the user other user's scores to show them what scores they need to get in order to win something
@@ -45,17 +45,23 @@ if answer.lower().strip() == "yes":
   print("Here are the top 3 scores we have recieved so far:")
 
   time.sleep(2)
-  print("1. Joe: 29/30")
+  print("1. Joe: 23/24")
   time.sleep(1)
-  print("2. Beatrice: 28/30")
+  print("2. Beatrice: 22/24")
   time.sleep(1)
-  print("3. Nate: 26/30")
+  print("3. Nate: 20/24")
   time.sleep(2)
 
   print("")
   print("You will need to make it onto this leaderboard in order to win a prize.")
-  print("Part one will commence in 5 seconds. Good luck. ")
-  time.sleep(5)
+  time.sleep(1.5)
+  print("First place wins a Sceptre E255B-1658A 25\" gaming monitor.")
+  time.sleep(1.5)
+  print("Second place wins a SteelSeries Arctis 3 Gaming Headset")
+  time.sleep(1.5)
+  print("Third place gets a Logitech G502 Gaming Mouse")
+  print("Part one is about to start. Good luck")
+  time.sleep(1.5)
 
   #Part 1
   print("")
@@ -148,7 +154,7 @@ if answer.lower().strip() == "yes":
   #use while statement to ensure code doesnt break easily
   while p1_q3.lower().strip() != "a" and p1_q3.lower().strip() != "b" and p1_q3.lower().strip() != "c" and p1_q3.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p1_q1 = input("Question 3: Which of these string methods removes all whitespace from an input?: ")
+    p1_q1 = input("Question 3: Which of these string methods removes all whitespace from a string variable?: ")
 
   #use if/elif statement to determine whether the question is correct
   if p1_q3.lower().strip() == "a" :
@@ -265,7 +271,7 @@ if answer.lower().strip() == "yes":
   #use while statement to ensure code doesnt break easily
   while p1_q7.lower().strip() != "a" and p1_q7.lower().strip() != "b" and p1_q7.lower().strip() != "c" and p1_q7.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p1_q7 = input("Question 7: Which of these symbols is used to make a comment?: ")
+    p1_q7 = input("Question 7: Which of these are not a valid variable name?: ")
 
   #use if/elif statement to determine whether the question is correct
   if p1_q7.lower().strip() == "a" :
@@ -292,12 +298,12 @@ if answer.lower().strip() == "yes":
   print("D. ^")
   print("")
   #user input to ask the question
-  p1_q8 = input("Question 8: Which of these are not a Python operator?: ")
+  p1_q8 = input("Question 8: Which of these is not a Python mathematical operator?: ")
 
   #use while statement to ensure code doesnt break easily
   while p1_q8.lower().strip() != "a" and p1_q8.lower().strip() != "b" and p1_q8.lower().strip() != "c" and p1_q8.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p1_q8 = input("Question 8: Which of these are not a Python operator?: ")
+    p1_q8 = input("Question 8: Which of these are not a Python mathematical operator?: ")
 
   #use if/elif statement to determine whether the question is correct
   if p1_q8.lower().strip() == "d" :
@@ -431,7 +437,7 @@ if answer.lower().strip() == "yes":
     p2_q4 = input("Question 4:: What is keylogging malware?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p2_q4.lower().strip() == "c" :
+  if p2_q4.lower().strip() == "d" :
     #add 1 point if correct
     part2_correct_answers += 1
     time.sleep(1)
@@ -462,7 +468,7 @@ if answer.lower().strip() == "yes":
     p2_q5 = input("Question 5: What is trojan malware?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p2_q5.lower().strip() == "c" :
+  if p2_q5.lower().strip() == "b" :
     #add 1 point if correct
     part2_correct_answers += 1
     time.sleep(1)
@@ -485,12 +491,12 @@ if answer.lower().strip() == "yes":
   print("D. Razer Cortex")
   print("")
   #user input to ask the question
-  p2_q6 = input("Question 5: Which of these is an example of application software?: ")
+  p2_q6 = input("Question 6: Which of these is an example of application software?: ")
 
   #use while statement to ensure code doesnt break easily
   while p2_q6.lower().strip() != "a" and p2_q6.lower().strip() != "b" and p2_q6.lower().strip() != "c" and p2_q6.lower().strip() != "d":
     print("Please type the letter corresponding with your answer.")
-    p2_q6 = input("Question 5: Which of these is an example of application software?: ")
+    p2_q6 = input("Question 6: Which of these is an example of application software?: ")
 
   #use if/elif statement to determine whether the question is correct
   if p2_q6.lower().strip() == "b" :
@@ -617,7 +623,7 @@ if answer.lower().strip() == "yes":
   print("D. Storage capacity")
   print("")
   #user input to ask the question
-  p3_q1 = input("Question 2: Which of these specifications relates to a mouse?: ")
+  p3_q2 = input("Question 2: Which of these specifications relates to a mouse?: ")
 
   #use while statement to ensure code doesnt break easily
   while p3_q2.lower().strip() != "a" and p3_q2.lower().strip() != "b" and p3_q2.lower().strip() != "c" and p3_q2.lower().strip() != "d":
@@ -625,7 +631,7 @@ if answer.lower().strip() == "yes":
     p3_q2 = input("Question 1: Which of these specifications relates to a mouse?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p3_q2.lower().strip() == "b" :
+  if p3_q2.lower().strip() == "a" :
     #add 1 point if correct
     part3_correct_answers += 1
     time.sleep(1)
@@ -687,7 +693,7 @@ if answer.lower().strip() == "yes":
     p3_q4 = input("Question 4: What is the primary function of the motherboard?: ")
 
   #use if/elif statement to determine whether the question is correct
-  if p3_q4.lower().strip() == "b" :
+  if p3_q4.lower().strip() == "d" :
     #add 1 point if correct
     part3_correct_answers += 1
     time.sleep(1)
@@ -832,7 +838,72 @@ if answer.lower().strip() == "yes":
   
   #show user his scores
   print("Here are your quiz results: ")
-  time.sleep(2)
+  print("")
+  time.sleep(1)
+  print("Your score for part 1 is: " + str(part1_correct_answers) + "/8")
+  time.sleep(1)
+  print("Your score for part 2 is: " + str(part2_correct_answers) + "/8")
+  time.sleep(1)
+  print("Your score for part 3 is: " + str(part3_correct_answers) + "/8")
+  time.sleep(1)
+  
+  #calculate his total score for all three parts
+  total_score = part1_correct_answers + part2_correct_answers + part3_correct_answers
+  #print the scores
+  print("")
+  print("Your total score is: " + str(total_score) + "/24")
+  
+  #use if/elif/else statement to tell the user what place he is currently in
+  #create a variable for whether or not someone is on the leaderboard.
+  leaderboard = False
+  print("")
+  time.sleep(1)
+  if total_score == 24:
+    print("Congrats! You are currently in first place! If you stay in this position, you will win the monitor!")
+    leaderboard = True
+  elif total_score == 23:
+    print("Congrats! You are currently tied for first place! If you stay in this position, you and whoever you are tied with will be entered in a draw for the monitor.")
+    leaderboard = True
+  elif total_score == 22: 
+    print("Congrats! You are currently tied for second! If you stay in this position, you and whoever you are tied in will be entered in a draw for the headset")
+    leaderboard = True
+  elif total_score == 21:
+    print("Congrats! You are currently in third place! If you stay in this position, you will win the mouse!")
+    leaderboard = True
+  elif total_score == 20: 
+    print("Congrats! You are currently tied for third! If you stay in this position, you and whoever you are tied in will be entered in a draw for the mouse")
+    leaderboard = True
+  else:
+    print("Unfortunately, your score wasn't high enough to be entered for a prize. Better luck next time.")
+  
+  #ask the user to enter their email if they are on the leaderboard, so we can email them about their prizes
+  #if statement so that the email is only asked if they are on the leaderboard.
+  if leaderboard:
+    time.sleep(2)
+    print("")
+    email = input("Please enter your email so we can notify whether you have won: ")
+    #search email inputed for the @ symbol to verify that it is an email
+    search_char = "@"
+    found = False
+    
+    for i in range(len(email)):
+      if email[i] == search_char:
+        found = True
+        break
+  
+  #while statement to ask for a proper email if found = false
+    while not found:
+      print("")
+      print("This email is invalid")
+      email = input("Please enter your email so we can notify whether you have won: ")
+      for i in range(len(email)):
+        if email[i] == search_char:
+          found = True
+          break
+
+  time.sleep(1)
+  print("")
+  print("Thank you for participating in our giveaway quiz! Until next time!")
 
 #elif statement if they dont want to take the quiz. 
 elif answer.lower().strip() == "no":
