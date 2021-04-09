@@ -770,7 +770,7 @@ if answer.lower().strip() == "yes":
 
   #Question seven
   #print the options for multiple choice
-  print("A. Graphics Processing Unit(GPU)")
+  print("A. Graphics Processing Unit(GPU) ")
   time.sleep(1)
   print("B. Headphones/Speaker")
   time.sleep(1)
